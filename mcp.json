@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "swiftreporter": {
+      "url": "https://app.swiftreporter.com/api/mcp",
+      "auth": {
+        "CLIENT_ID": "swiftreporter-openai"
+      }
+    }
+  }
+}
