@@ -1,0 +1,668 @@
+{
+  "$schema": "https://developers.openai.com/apps-sdk/schemas/chatgpt-app-submission.v1.json",
+  "schema_version": 1,
+  "app_info": {
+    "display_name": "SwiftReporter",
+    "subtitle": "Manage inspection workflows",
+    "description": "SwiftReporter helps inspectors work with inspections, observations, reports, templates, contacts, appointments, contracts, and invoices from ChatGPT. Connect your SwiftReporter account, then ask ChatGPT to find jobs, update findings, start PDF reports, and manage Back of House records with the same access as your signed-in web user. You approve access once and can revoke it anytime from Account → Connected Apps.",
+    "category": "BUSINESS"
+  },
+  "tools": {
+    "account_get": {
+      "annotations": {
+        "readOnlyHint": true,
+        "openWorldHint": false,
+        "destructiveHint": false
+      },
+      "justifications": {
+        "read_only_justification": "Only retrieves SwiftReporter account or inspection data and does not create or change records.",
+        "open_world_justification": "Operates only within the user's private SwiftReporter workspace and does not publish to the public internet.",
+        "destructive_justification": "Does not permanently delete, void, revoke access, or perform irreversible destructive actions."
+      }
+    },
+    "account_get_entitlements": {
+      "annotations": {
+        "readOnlyHint": true,
+        "openWorldHint": false,
+        "destructiveHint": false
+      },
+      "justifications": {
+        "read_only_justification": "Only retrieves SwiftReporter account or inspection data and does not create or change records.",
+        "open_world_justification": "Operates only within the user's private SwiftReporter workspace and does not publish to the public internet.",
+        "destructive_justification": "Does not permanently delete, void, revoke access, or perform irreversible destructive actions."
+      }
+    },
+    "org_get": {
+      "annotations": {
+        "readOnlyHint": true,
+        "openWorldHint": false,
+        "destructiveHint": false
+      },
+      "justifications": {
+        "read_only_justification": "Only retrieves SwiftReporter account or inspection data and does not create or change records.",
+        "open_world_justification": "Operates only within the user's private SwiftReporter workspace and does not publish to the public internet.",
+        "destructive_justification": "Does not permanently delete, void, revoke access, or perform irreversible destructive actions."
+      }
+    },
+    "org_list_members": {
+      "annotations": {
+        "readOnlyHint": true,
+        "openWorldHint": false,
+        "destructiveHint": false
+      },
+      "justifications": {
+        "read_only_justification": "Only retrieves SwiftReporter account or inspection data and does not create or change records.",
+        "open_world_justification": "Operates only within the user's private SwiftReporter workspace and does not publish to the public internet.",
+        "destructive_justification": "Does not permanently delete, void, revoke access, or perform irreversible destructive actions."
+      }
+    },
+    "inspections_list": {
+      "annotations": {
+        "readOnlyHint": true,
+        "openWorldHint": false,
+        "destructiveHint": false
+      },
+      "justifications": {
+        "read_only_justification": "Only retrieves SwiftReporter account or inspection data and does not create or change records.",
+        "open_world_justification": "Operates only within the user's private SwiftReporter workspace and does not publish to the public internet.",
+        "destructive_justification": "Does not permanently delete, void, revoke access, or perform irreversible destructive actions."
+      }
+    },
+    "inspections_get": {
+      "annotations": {
+        "readOnlyHint": true,
+        "openWorldHint": false,
+        "destructiveHint": false
+      },
+      "justifications": {
+        "read_only_justification": "Only retrieves SwiftReporter account or inspection data and does not create or change records.",
+        "open_world_justification": "Operates only within the user's private SwiftReporter workspace and does not publish to the public internet.",
+        "destructive_justification": "Does not permanently delete, void, revoke access, or perform irreversible destructive actions."
+      }
+    },
+    "observations_list": {
+      "annotations": {
+        "readOnlyHint": true,
+        "openWorldHint": false,
+        "destructiveHint": false
+      },
+      "justifications": {
+        "read_only_justification": "Only retrieves SwiftReporter account or inspection data and does not create or change records.",
+        "open_world_justification": "Operates only within the user's private SwiftReporter workspace and does not publish to the public internet.",
+        "destructive_justification": "Does not permanently delete, void, revoke access, or perform irreversible destructive actions."
+      }
+    },
+    "observations_get": {
+      "annotations": {
+        "readOnlyHint": true,
+        "openWorldHint": false,
+        "destructiveHint": false
+      },
+      "justifications": {
+        "read_only_justification": "Only retrieves SwiftReporter account or inspection data and does not create or change records.",
+        "open_world_justification": "Operates only within the user's private SwiftReporter workspace and does not publish to the public internet.",
+        "destructive_justification": "Does not permanently delete, void, revoke access, or perform irreversible destructive actions."
+      }
+    },
+    "templates_list": {
+      "annotations": {
+        "readOnlyHint": true,
+        "openWorldHint": false,
+        "destructiveHint": false
+      },
+      "justifications": {
+        "read_only_justification": "Only retrieves SwiftReporter account or inspection data and does not create or change records.",
+        "open_world_justification": "Operates only within the user's private SwiftReporter workspace and does not publish to the public internet.",
+        "destructive_justification": "Does not permanently delete, void, revoke access, or perform irreversible destructive actions."
+      }
+    },
+    "templates_get": {
+      "annotations": {
+        "readOnlyHint": true,
+        "openWorldHint": false,
+        "destructiveHint": false
+      },
+      "justifications": {
+        "read_only_justification": "Only retrieves SwiftReporter account or inspection data and does not create or change records.",
+        "open_world_justification": "Operates only within the user's private SwiftReporter workspace and does not publish to the public internet.",
+        "destructive_justification": "Does not permanently delete, void, revoke access, or perform irreversible destructive actions."
+      }
+    },
+    "contacts_list": {
+      "annotations": {
+        "readOnlyHint": true,
+        "openWorldHint": false,
+        "destructiveHint": false
+      },
+      "justifications": {
+        "read_only_justification": "Only retrieves SwiftReporter account or inspection data and does not create or change records.",
+        "open_world_justification": "Operates only within the user's private SwiftReporter workspace and does not publish to the public internet.",
+        "destructive_justification": "Does not permanently delete, void, revoke access, or perform irreversible destructive actions."
+      }
+    },
+    "appointments_list": {
+      "annotations": {
+        "readOnlyHint": true,
+        "openWorldHint": false,
+        "destructiveHint": false
+      },
+      "justifications": {
+        "read_only_justification": "Only retrieves SwiftReporter account or inspection data and does not create or change records.",
+        "open_world_justification": "Operates only within the user's private SwiftReporter workspace and does not publish to the public internet.",
+        "destructive_justification": "Does not permanently delete, void, revoke access, or perform irreversible destructive actions."
+      }
+    },
+    "comments_list": {
+      "annotations": {
+        "readOnlyHint": true,
+        "openWorldHint": false,
+        "destructiveHint": false
+      },
+      "justifications": {
+        "read_only_justification": "Only retrieves SwiftReporter account or inspection data and does not create or change records.",
+        "open_world_justification": "Operates only within the user's private SwiftReporter workspace and does not publish to the public internet.",
+        "destructive_justification": "Does not permanently delete, void, revoke access, or perform irreversible destructive actions."
+      }
+    },
+    "comments_search": {
+      "annotations": {
+        "readOnlyHint": true,
+        "openWorldHint": false,
+        "destructiveHint": false
+      },
+      "justifications": {
+        "read_only_justification": "Only retrieves SwiftReporter account or inspection data and does not create or change records.",
+        "open_world_justification": "Operates only within the user's private SwiftReporter workspace and does not publish to the public internet.",
+        "destructive_justification": "Does not permanently delete, void, revoke access, or perform irreversible destructive actions."
+      }
+    },
+    "notifications_list": {
+      "annotations": {
+        "readOnlyHint": true,
+        "openWorldHint": false,
+        "destructiveHint": false
+      },
+      "justifications": {
+        "read_only_justification": "Only retrieves SwiftReporter account or inspection data and does not create or change records.",
+        "open_world_justification": "Operates only within the user's private SwiftReporter workspace and does not publish to the public internet.",
+        "destructive_justification": "Does not permanently delete, void, revoke access, or perform irreversible destructive actions."
+      }
+    },
+    "invoices_list": {
+      "annotations": {
+        "readOnlyHint": true,
+        "openWorldHint": false,
+        "destructiveHint": false
+      },
+      "justifications": {
+        "read_only_justification": "Only retrieves SwiftReporter account or inspection data and does not create or change records.",
+        "open_world_justification": "Operates only within the user's private SwiftReporter workspace and does not publish to the public internet.",
+        "destructive_justification": "Does not permanently delete, void, revoke access, or perform irreversible destructive actions."
+      }
+    },
+    "contracts_list": {
+      "annotations": {
+        "readOnlyHint": true,
+        "openWorldHint": false,
+        "destructiveHint": false
+      },
+      "justifications": {
+        "read_only_justification": "Only retrieves SwiftReporter account or inspection data and does not create or change records.",
+        "open_world_justification": "Operates only within the user's private SwiftReporter workspace and does not publish to the public internet.",
+        "destructive_justification": "Does not permanently delete, void, revoke access, or perform irreversible destructive actions."
+      }
+    },
+    "inspections_create": {
+      "annotations": {
+        "readOnlyHint": false,
+        "openWorldHint": false,
+        "destructiveHint": false
+      },
+      "justifications": {
+        "read_only_justification": "Writes to the signed-in user's private SwiftReporter account or related records.",
+        "open_world_justification": "Operates only within the user's private SwiftReporter workspace and does not publish to the public internet.",
+        "destructive_justification": "Does not permanently delete, void, revoke access, or perform irreversible destructive actions."
+      }
+    },
+    "inspections_update": {
+      "annotations": {
+        "readOnlyHint": false,
+        "openWorldHint": false,
+        "destructiveHint": false
+      },
+      "justifications": {
+        "read_only_justification": "Writes to the signed-in user's private SwiftReporter account or related records.",
+        "open_world_justification": "Operates only within the user's private SwiftReporter workspace and does not publish to the public internet.",
+        "destructive_justification": "Does not permanently delete, void, revoke access, or perform irreversible destructive actions."
+      }
+    },
+    "inspections_archive": {
+      "annotations": {
+        "readOnlyHint": false,
+        "openWorldHint": false,
+        "destructiveHint": false
+      },
+      "justifications": {
+        "read_only_justification": "Writes to the signed-in user's private SwiftReporter account or related records.",
+        "open_world_justification": "Operates only within the user's private SwiftReporter workspace and does not publish to the public internet.",
+        "destructive_justification": "Does not permanently delete, void, revoke access, or perform irreversible destructive actions."
+      }
+    },
+    "inspections_assign": {
+      "annotations": {
+        "readOnlyHint": false,
+        "openWorldHint": false,
+        "destructiveHint": false
+      },
+      "justifications": {
+        "read_only_justification": "Writes to the signed-in user's private SwiftReporter account or related records.",
+        "open_world_justification": "Operates only within the user's private SwiftReporter workspace and does not publish to the public internet.",
+        "destructive_justification": "Does not permanently delete, void, revoke access, or perform irreversible destructive actions."
+      }
+    },
+    "observations_create": {
+      "annotations": {
+        "readOnlyHint": false,
+        "openWorldHint": false,
+        "destructiveHint": false
+      },
+      "justifications": {
+        "read_only_justification": "Writes to the signed-in user's private SwiftReporter account or related records.",
+        "open_world_justification": "Operates only within the user's private SwiftReporter workspace and does not publish to the public internet.",
+        "destructive_justification": "Does not permanently delete, void, revoke access, or perform irreversible destructive actions."
+      }
+    },
+    "observations_update": {
+      "annotations": {
+        "readOnlyHint": false,
+        "openWorldHint": false,
+        "destructiveHint": false
+      },
+      "justifications": {
+        "read_only_justification": "Writes to the signed-in user's private SwiftReporter account or related records.",
+        "open_world_justification": "Operates only within the user's private SwiftReporter workspace and does not publish to the public internet.",
+        "destructive_justification": "Does not permanently delete, void, revoke access, or perform irreversible destructive actions."
+      }
+    },
+    "observations_delete": {
+      "annotations": {
+        "readOnlyHint": false,
+        "openWorldHint": false,
+        "destructiveHint": true
+      },
+      "justifications": {
+        "read_only_justification": "Writes to the signed-in user's private SwiftReporter account or related records.",
+        "open_world_justification": "Operates only within the user's private SwiftReporter workspace and does not publish to the public internet.",
+        "destructive_justification": "Permanently deletes the selected observation after the user confirms the action."
+      }
+    },
+    "observations_summarize": {
+      "annotations": {
+        "readOnlyHint": false,
+        "openWorldHint": true,
+        "destructiveHint": false
+      },
+      "justifications": {
+        "read_only_justification": "Updates the observation with a generated summary rather than only reading it.",
+        "open_world_justification": "Calls SwiftReporter AI processing to generate a summary for the observation.",
+        "destructive_justification": "Does not permanently delete, void, revoke access, or perform irreversible destructive actions."
+      }
+    },
+    "media_list": {
+      "annotations": {
+        "readOnlyHint": true,
+        "openWorldHint": false,
+        "destructiveHint": false
+      },
+      "justifications": {
+        "read_only_justification": "Only retrieves SwiftReporter account or inspection data and does not create or change records.",
+        "open_world_justification": "Operates only within the user's private SwiftReporter workspace and does not publish to the public internet.",
+        "destructive_justification": "Does not permanently delete, void, revoke access, or perform irreversible destructive actions."
+      }
+    },
+    "reports_generate_start": {
+      "annotations": {
+        "readOnlyHint": false,
+        "openWorldHint": true,
+        "destructiveHint": false
+      },
+      "justifications": {
+        "read_only_justification": "Writes to the signed-in user's private SwiftReporter account or related records.",
+        "open_world_justification": "Starts PDF report generation that may use hosted rendering and storage services.",
+        "destructive_justification": "Does not permanently delete, void, revoke access, or perform irreversible destructive actions."
+      }
+    },
+    "reports_job_status": {
+      "annotations": {
+        "readOnlyHint": true,
+        "openWorldHint": false,
+        "destructiveHint": false
+      },
+      "justifications": {
+        "read_only_justification": "Only retrieves SwiftReporter account or inspection data and does not create or change records.",
+        "open_world_justification": "Operates only within the user's private SwiftReporter workspace and does not publish to the public internet.",
+        "destructive_justification": "Does not permanently delete, void, revoke access, or perform irreversible destructive actions."
+      }
+    },
+    "inspections_share_send": {
+      "annotations": {
+        "readOnlyHint": false,
+        "openWorldHint": true,
+        "destructiveHint": false
+      },
+      "justifications": {
+        "read_only_justification": "Creates and sends a share invite rather than only reading inspection data.",
+        "open_world_justification": "Sends an inspection share invite email to an external recipient address.",
+        "destructive_justification": "Does not permanently delete, void, revoke access, or perform irreversible destructive actions."
+      }
+    },
+    "templates_create": {
+      "annotations": {
+        "readOnlyHint": false,
+        "openWorldHint": false,
+        "destructiveHint": false
+      },
+      "justifications": {
+        "read_only_justification": "Writes to the signed-in user's private SwiftReporter account or related records.",
+        "open_world_justification": "Operates only within the user's private SwiftReporter workspace and does not publish to the public internet.",
+        "destructive_justification": "Does not permanently delete, void, revoke access, or perform irreversible destructive actions."
+      }
+    },
+    "templates_copy_prebuilt": {
+      "annotations": {
+        "readOnlyHint": false,
+        "openWorldHint": false,
+        "destructiveHint": false
+      },
+      "justifications": {
+        "read_only_justification": "Writes to the signed-in user's private SwiftReporter account or related records.",
+        "open_world_justification": "Operates only within the user's private SwiftReporter workspace and does not publish to the public internet.",
+        "destructive_justification": "Does not permanently delete, void, revoke access, or perform irreversible destructive actions."
+      }
+    },
+    "comments_create": {
+      "annotations": {
+        "readOnlyHint": false,
+        "openWorldHint": false,
+        "destructiveHint": false
+      },
+      "justifications": {
+        "read_only_justification": "Writes to the signed-in user's private SwiftReporter account or related records.",
+        "open_world_justification": "Operates only within the user's private SwiftReporter workspace and does not publish to the public internet.",
+        "destructive_justification": "Does not permanently delete, void, revoke access, or perform irreversible destructive actions."
+      }
+    },
+    "contacts_create": {
+      "annotations": {
+        "readOnlyHint": false,
+        "openWorldHint": false,
+        "destructiveHint": false
+      },
+      "justifications": {
+        "read_only_justification": "Writes to the signed-in user's private SwiftReporter account or related records.",
+        "open_world_justification": "Operates only within the user's private SwiftReporter workspace and does not publish to the public internet.",
+        "destructive_justification": "Does not permanently delete, void, revoke access, or perform irreversible destructive actions."
+      }
+    },
+    "contacts_update": {
+      "annotations": {
+        "readOnlyHint": false,
+        "openWorldHint": false,
+        "destructiveHint": false
+      },
+      "justifications": {
+        "read_only_justification": "Writes to the signed-in user's private SwiftReporter account or related records.",
+        "open_world_justification": "Operates only within the user's private SwiftReporter workspace and does not publish to the public internet.",
+        "destructive_justification": "Does not permanently delete, void, revoke access, or perform irreversible destructive actions."
+      }
+    },
+    "contacts_merge": {
+      "annotations": {
+        "readOnlyHint": false,
+        "openWorldHint": false,
+        "destructiveHint": true
+      },
+      "justifications": {
+        "read_only_justification": "Writes to the signed-in user's private SwiftReporter account or related records.",
+        "open_world_justification": "Only updates private SwiftReporter contact records owned by the signed-in user.",
+        "destructive_justification": "Merges a secondary contact into a primary contact, which cannot be undone as separate records."
+      }
+    },
+    "appointments_create": {
+      "annotations": {
+        "readOnlyHint": false,
+        "openWorldHint": false,
+        "destructiveHint": false
+      },
+      "justifications": {
+        "read_only_justification": "Writes to the signed-in user's private SwiftReporter account or related records.",
+        "open_world_justification": "Operates only within the user's private SwiftReporter workspace and does not publish to the public internet.",
+        "destructive_justification": "Does not permanently delete, void, revoke access, or perform irreversible destructive actions."
+      }
+    },
+    "account_update_profile": {
+      "annotations": {
+        "readOnlyHint": false,
+        "openWorldHint": false,
+        "destructiveHint": false
+      },
+      "justifications": {
+        "read_only_justification": "Writes to the signed-in user's private SwiftReporter account or related records.",
+        "open_world_justification": "Operates only within the user's private SwiftReporter workspace and does not publish to the public internet.",
+        "destructive_justification": "Does not permanently delete, void, revoke access, or perform irreversible destructive actions."
+      }
+    },
+    "account_update_notification_settings": {
+      "annotations": {
+        "readOnlyHint": false,
+        "openWorldHint": false,
+        "destructiveHint": false
+      },
+      "justifications": {
+        "read_only_justification": "Updates the user's notification preferences in their SwiftReporter account.",
+        "open_world_justification": "Operates only within the user's private SwiftReporter workspace and does not publish to the public internet.",
+        "destructive_justification": "Does not permanently delete, void, revoke access, or perform irreversible destructive actions."
+      }
+    },
+    "booking_settings_get": {
+      "annotations": {
+        "readOnlyHint": true,
+        "openWorldHint": false,
+        "destructiveHint": false
+      },
+      "justifications": {
+        "read_only_justification": "Only retrieves SwiftReporter account or inspection data and does not create or change records.",
+        "open_world_justification": "Operates only within the user's private SwiftReporter workspace and does not publish to the public internet.",
+        "destructive_justification": "Does not permanently delete, void, revoke access, or perform irreversible destructive actions."
+      }
+    },
+    "quote_calculator_get_settings": {
+      "annotations": {
+        "readOnlyHint": true,
+        "openWorldHint": false,
+        "destructiveHint": false
+      },
+      "justifications": {
+        "read_only_justification": "Only retrieves SwiftReporter account or inspection data and does not create or change records.",
+        "open_world_justification": "Operates only within the user's private SwiftReporter workspace and does not publish to the public internet.",
+        "destructive_justification": "Does not permanently delete, void, revoke access, or perform irreversible destructive actions."
+      }
+    },
+    "custom_prompts_get": {
+      "annotations": {
+        "readOnlyHint": true,
+        "openWorldHint": false,
+        "destructiveHint": false
+      },
+      "justifications": {
+        "read_only_justification": "Only retrieves SwiftReporter account or inspection data and does not create or change records.",
+        "open_world_justification": "Operates only within the user's private SwiftReporter workspace and does not publish to the public internet.",
+        "destructive_justification": "Does not permanently delete, void, revoke access, or perform irreversible destructive actions."
+      }
+    },
+    "custom_prompts_update": {
+      "annotations": {
+        "readOnlyHint": false,
+        "openWorldHint": false,
+        "destructiveHint": false
+      },
+      "justifications": {
+        "read_only_justification": "Writes to the signed-in user's private SwiftReporter account or related records.",
+        "open_world_justification": "Operates only within the user's private SwiftReporter workspace and does not publish to the public internet.",
+        "destructive_justification": "Does not permanently delete, void, revoke access, or perform irreversible destructive actions."
+      }
+    },
+    "glossary_list": {
+      "annotations": {
+        "readOnlyHint": true,
+        "openWorldHint": false,
+        "destructiveHint": false
+      },
+      "justifications": {
+        "read_only_justification": "Only retrieves SwiftReporter account or inspection data and does not create or change records.",
+        "open_world_justification": "Operates only within the user's private SwiftReporter workspace and does not publish to the public internet.",
+        "destructive_justification": "Does not permanently delete, void, revoke access, or perform irreversible destructive actions."
+      }
+    },
+    "glossary_upsert": {
+      "annotations": {
+        "readOnlyHint": false,
+        "openWorldHint": false,
+        "destructiveHint": false
+      },
+      "justifications": {
+        "read_only_justification": "Writes to the signed-in user's private SwiftReporter account or related records.",
+        "open_world_justification": "Operates only within the user's private SwiftReporter workspace and does not publish to the public internet.",
+        "destructive_justification": "Does not permanently delete, void, revoke access, or perform irreversible destructive actions."
+      }
+    },
+    "contracts_send": {
+      "annotations": {
+        "readOnlyHint": false,
+        "openWorldHint": true,
+        "destructiveHint": false
+      },
+      "justifications": {
+        "read_only_justification": "Writes to the signed-in user's private SwiftReporter account or related records.",
+        "open_world_justification": "Sends a contract for signing through the configured e-signature workflow.",
+        "destructive_justification": "Does not permanently delete, void, revoke access, or perform irreversible destructive actions."
+      }
+    },
+    "invoices_create": {
+      "annotations": {
+        "readOnlyHint": false,
+        "openWorldHint": true,
+        "destructiveHint": false
+      },
+      "justifications": {
+        "read_only_justification": "Writes to the signed-in user's private SwiftReporter account or related records.",
+        "open_world_justification": "Creates an invoice that may interact with the connected payments provider.",
+        "destructive_justification": "Does not permanently delete, void, revoke access, or perform irreversible destructive actions."
+      }
+    },
+    "invoices_send": {
+      "annotations": {
+        "readOnlyHint": false,
+        "openWorldHint": true,
+        "destructiveHint": false
+      },
+      "justifications": {
+        "read_only_justification": "Writes to the signed-in user's private SwiftReporter account or related records.",
+        "open_world_justification": "Sends an invoice to customer contacts through the payments workflow.",
+        "destructive_justification": "Does not permanently delete, void, revoke access, or perform irreversible destructive actions."
+      }
+    },
+    "invoices_prepare_void": {
+      "annotations": {
+        "readOnlyHint": false,
+        "openWorldHint": false,
+        "destructiveHint": false
+      },
+      "justifications": {
+        "read_only_justification": "Validates and describes a proposed void without completing the void yet.",
+        "open_world_justification": "Operates only within the user's private SwiftReporter workspace and does not publish to the public internet.",
+        "destructive_justification": "Does not void the invoice until a separate confirmation tool is used."
+      }
+    },
+    "invoices_confirm_void": {
+      "annotations": {
+        "readOnlyHint": false,
+        "openWorldHint": true,
+        "destructiveHint": true
+      },
+      "justifications": {
+        "read_only_justification": "Writes to the signed-in user's private SwiftReporter account or related records.",
+        "open_world_justification": "Voids the invoice through the connected payments provider.",
+        "destructive_justification": "Completes a prepared invoice void, which cannot be undone after confirmation."
+      }
+    }
+  },
+  "test_cases": [
+    {
+      "description": "List the signed-in user inspections so review can confirm read access.",
+      "user_prompt": "List my active inspections in SwiftReporter.",
+      "file_attachment_urls": null,
+      "tools_triggered": "inspections_list",
+      "expected_output": "Returns a paginated list of inspections the signed-in user can access, with names or addresses and IDs.",
+      "expected_output_url": null
+    },
+    {
+      "description": "Open one inspection and show its observations.",
+      "user_prompt": "Open my most recent inspection and list its observations.",
+      "file_attachment_urls": null,
+      "tools_triggered": "inspections_list,inspections_get,observations_list",
+      "expected_output": "Identifies a recent inspection and returns its observation summaries without inventing findings.",
+      "expected_output_url": null
+    },
+    {
+      "description": "Create a new observation on an existing inspection.",
+      "user_prompt": "Add an observation to that inspection about damaged roof flashing that needs repair.",
+      "file_attachment_urls": null,
+      "tools_triggered": "observations_create",
+      "expected_output": "Creates an observation on the selected inspection and confirms the new observation ID or summary.",
+      "expected_output_url": null
+    },
+    {
+      "description": "Start a PDF report and check job status.",
+      "user_prompt": "Generate the PDF report for that inspection and tell me when it is ready.",
+      "file_attachment_urls": null,
+      "tools_triggered": "reports_generate_start,reports_job_status",
+      "expected_output": "Starts report generation, returns a job id, and reports status until the job completes or is still running.",
+      "expected_output_url": null
+    },
+    {
+      "description": "Read account entitlements before a gated workflow.",
+      "user_prompt": "What SwiftReporter plan and permissions does my account have?",
+      "file_attachment_urls": null,
+      "tools_triggered": "account_get_entitlements",
+      "expected_output": "Returns the signed-in user role, plan or entitlements, and relevant feature access flags.",
+      "expected_output_url": null
+    }
+  ],
+  "negative_test_cases": [
+    {
+      "description": "Do not trigger for unrelated personal calendar requests.",
+      "user_prompt": "What meetings do I have on my Google Calendar tomorrow?",
+      "file_attachment_urls": null,
+      "tools_triggered": null,
+      "expected_output": "The app should not be invoked because calendar scheduling outside SwiftReporter is out of scope.",
+      "expected_output_url": null
+    },
+    {
+      "description": "Do not trigger for general weather or home-repair advice.",
+      "user_prompt": "How do I fix a leaking faucet at home?",
+      "file_attachment_urls": null,
+      "tools_triggered": null,
+      "expected_output": "The app should not be invoked because this is general advice, not a SwiftReporter account workflow.",
+      "expected_output_url": null
+    },
+    {
+      "description": "Do not attempt account deletion or org admin actions that are intentionally unavailable.",
+      "user_prompt": "Delete my SwiftReporter account and remove my organisation.",
+      "file_attachment_urls": null,
+      "tools_triggered": null,
+      "expected_output": "The app should refuse or avoid tool calls for account/org deletion and direct the user to the SwiftReporter web app.",
+      "expected_output_url": null
+    }
+  ]
+}

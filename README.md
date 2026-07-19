@@ -55,8 +55,15 @@ The tools available to you depend on your SwiftReporter plan, organisation role,
 ## Included files
 
 - `mcp.json` contains a generic remote MCP configuration.
-- `chatgpt-app.example.json` contains the values used when creating the ChatGPT app.
+- `chatgpt-app.example.json` contains the values used when creating a ChatGPT developer-mode app.
+- `chatgpt-app-submission.json` is the Apps submission import file (schema v1) for OpenAI’s plugin/Apps form — app info, tool hint justifications, and test cases.
 - `skills/swiftreporter/` contains optional guidance for AI coding agents.
+
+In the SwiftReporter web monorepo, regenerate the submission JSON after MCP tool changes with:
+
+```bash
+node integrations/openai-swiftreporter/generate-submission.mjs
+```
 
 ## Connection and access
 
