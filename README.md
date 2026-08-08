@@ -1,6 +1,8 @@
 # SwiftReporter for ChatGPT and OpenAI
 
-Use ChatGPT with your SwiftReporter account to work with inspections, observations, reports, contacts, appointments, and more.
+Use ChatGPT with your [SwiftReporter](https://www.swiftreporter.com) account to work with inspections, observations, reports, contacts, appointments, and more.
+
+Learn more at [www.swiftreporter.com](https://www.swiftreporter.com).
 
 ## Requirements
 
